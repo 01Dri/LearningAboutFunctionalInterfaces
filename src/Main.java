@@ -1,7 +1,6 @@
-import interfaces.IntConsumerInterface;
+import interfaces.ExampleFunctionalInterface;
 
 import java.util.Arrays;
-import java.util.function.IntConsumer;
 
 public class Main {
     public static void main(String[] args) {
@@ -72,7 +71,7 @@ public class Main {
      * @param array     The array of integers to be processed.
      * @param functions The functional interface defining the action to be performed.
      */
-    public static void printAllValuesWithMyFunctionalInterface(int[] array , IntConsumerInterface functions) {
+    public static void printAllValuesWithMyFunctionalInterface(int[] array , ExampleFunctionalInterface functions) {
         // Using the accept method of the IntConsumer interface to perform the action
         functions.forEach(array, element -> {
             System.out.println(element);
